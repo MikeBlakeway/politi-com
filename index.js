@@ -18,5 +18,5 @@ expressApp.listen(port, () => {
 expressApp.get('/status', (request, response) => {
     response
         .status(200)
-        .json({message: `application running on port: ${port}`})
+        .json({title: "Welcome to Politi.com"})
 })

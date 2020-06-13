@@ -1,25 +1,35 @@
 {
+  "author": "Mike Blakeway",
+  "description": "",
+  "homepage": "https://github.com/MikeBlakeway/politi-com#readme",
+  "license": "GPL-3.0-or-later",
+  "main": "index.js",
   "name": "politi-com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "watch": "NODE_ENV=development nodemon index.js",
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/MikeBlakeway/politi-com/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MikeBlakeway/politi-com.git"
   },
-  "author": "Mike Blakeway",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/MikeBlakeway/politi-com/issues"
-  },
-  "homepage": "https://github.com/MikeBlakeway/politi-com#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.4"
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "watch": "NODE_ENV=development nodemon index.js"
   }
 }
